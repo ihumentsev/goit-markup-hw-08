@@ -181,11 +181,11 @@ img {
 }
 
 .backdrop-modal__form {
-  width: 448px;
+  width: 370px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .backdrop-modal__form {
-    width: 370px;
+    width: 448px;
   }
 }
 
@@ -210,7 +210,7 @@ img {
 }
 
 .form-input {
-  width: 448px;
+  width: 370px;
   height: 40px;
   margin: 0;
   padding: 0 45px;
@@ -223,9 +223,9 @@ img {
   -webkit-transition: var(--animation);
   transition: var(--animation);
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .form-input {
-    width: 370px;
+    width: 448px;
   }
 }
 
@@ -247,23 +247,28 @@ img {
 
 .text-input {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .text-input {
-    font-size: 12px;
+    font-size: 14px;
   }
 }
 
 .link-input {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #2196F3;
   text-decoration: underline;
+}
+@media screen and (min-width: 1200px) {
+  .link-input {
+    font-size: 14px;
+  }
 }
 
 .input-name {
@@ -561,16 +566,6 @@ header .conteiner {
   position: absolute;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   width: 100%;
   height: 796px;
   background-color: rgb(0, 0, 0);
@@ -588,7 +583,7 @@ header .conteiner {
   pointer-events: none;
   display: none;
 }
-@media screen and (min-width: 767px) {
+@media screen and (min-width: 480px) {
   .mobile-modal {
     width: 480px;
   }
@@ -602,7 +597,19 @@ header .conteiner {
 }
 
 .mobile-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: auto;
+  width: 100%;
+  height: 100%;
 }
 
 .nav__list {
@@ -851,15 +858,15 @@ header .conteiner {
   padding-bottom: 50px;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  width: 528px;
+  width: 450px;
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .backdrop-modal {
-    width: 450px;
+    width: 528px;
   }
 }
 
