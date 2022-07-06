@@ -1029,11 +1029,12 @@ header .conteiner {
 }
 
 .work {
+  display: none;
   padding-bottom: 94px;
 }
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .work {
-    display: none;
+    display: initial;
   }
 }
 
