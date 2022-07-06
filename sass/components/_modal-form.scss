@@ -1,5 +1,8 @@
 .backdrop-modal__form {
-    width: 370px;
+    width: 100%;
+    @media screen and (min-width:480px) {
+            width: 370px;
+        }
     @media screen and (min-width:1200px) {
             width: 448px;
         }
@@ -7,13 +10,16 @@
 
 .backdrop-modal__title {
     font-weight: 700;
-    font-size: 20px;
+    font-size: 15px;
     line-height: 1.15;
     text-align: center;
     letter-spacing: 0.03em;
     color: #212121;
     text-align: center;
     margin-bottom: 12px;
+    @media screen and (min-width:480px) {
+            font-size: 20px;
+        }
 }
 
 .label {
@@ -26,7 +32,7 @@
 }
 
 .form-input {
-    width: 370px;
+    width: 100%;
     height: 40px;
     margin: 0;
     padding: 0 45px;
@@ -36,6 +42,9 @@
     outline: none;
     transition-property: border-color;
     transition: var(--animation);
+    @media screen and (min-width:480px) {
+            width: 370px;
+        }
     @media screen and (min-width:1200px) {
             width: 448px;
         }
