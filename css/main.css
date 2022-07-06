@@ -581,7 +581,7 @@ header .conteiner {
   transition: var(--animation);
   visibility: hidden;
   pointer-events: none;
-  display: none;
+  opacity: 0;
 }
 @media screen and (min-width: 480px) {
   .mobile-modal {
@@ -593,7 +593,7 @@ header .conteiner {
           transform: translateX(0);
   visibility: visible;
   pointer-events: initial;
-  display: initial;
+  opacity: 1;
 }
 
 .mobile-nav {
