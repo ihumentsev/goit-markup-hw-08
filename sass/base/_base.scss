@@ -2,4 +2,7 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     background-color: #FFFFFF;
+    &.no-scroll {
+        overflow: hidden;
+    }
 }

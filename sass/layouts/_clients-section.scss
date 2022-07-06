@@ -8,11 +8,15 @@
 }
 
 .cliets-title {
-    margin-bottom: 50px;
-    font-size: 36px;
+    margin-bottom: 30px;
+    font-size: 28px;
     line-height: 42px;
     text-align: center;
     letter-spacing: 0.03em;
+    @media screen and (min-width:1200px) {
+            margin-bottom: 50px;
+            font-size: 36px;
+        }
 }
 
 .clients-item__link {

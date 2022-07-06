@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 796px;
+    height: 100%;
     background-color: rgba(0, 0, 0, 1);
     transition: var(--animation);
     z-index: 2;
@@ -15,17 +15,13 @@
     visibility: hidden;
     pointer-events: none;
     opacity: 0;
-    @media screen and (min-width: 480px) {
-            width: 480px;
-        }
-
-   
 
     &.is-open {
         // transform: translateX(0);
         visibility: visible;
         pointer-events: initial;
         opacity: 1;
+        
     }
 }
 
