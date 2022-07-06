@@ -1,0 +1,33 @@
+// Переменные
+@import "./utils/vars";
+
+// База
+@import "./base/base";
+@import "./base/conteiner";
+@import "./base/reset.scss";
+
+// Компонетны
+@import "./components/btn";
+@import "./components/logo";
+@import "./components/contacts";
+@import "./components/modal-form";
+@import "./components/social-icon";
+@import "./components/filters-btn";
+
+
+// Основные компоненты-блоки
+@import "./layouts/header";
+@import "./layouts/mobile-menu";
+@import "./layouts/hesder-nav";
+@import "./layouts/hero";
+@import "./layouts/backdrop-modal";
+@import "./layouts/feature-section";
+@import "./layouts/work-section";
+@import "./layouts/team-sectione";
+@import "./layouts/clients-section";
+@import "./layouts/project-section";
+@import "./layouts/project-cards";
+@import "./layouts/footer";
+@import "./layouts/footer-contacts";
+@import "./layouts/footer-social";
+@import "./layouts/footer-form";

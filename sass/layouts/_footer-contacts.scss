@@ -1,0 +1,45 @@
+.contact-footer {
+    margin-right: 70px;
+    margin: 0 auto;
+    @media screen and (max-width:1200px) {
+            margin-bottom: 60px;
+        }
+}
+
+address {
+    display: flex;
+    margin-top: 20px;
+    font-style: normal;
+    justify-content: center;
+    .adress-item {
+        @media screen and (max-width:1200px) {
+                text-align: center;
+            }
+    }
+}
+
+.adress-item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.address-link--map {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--next-text-color);
+}
+
+.address-link {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition: var(--animation);
+}
+
+.address-link:hover,
+:focus {
+    color: var(--accent-color);
+}

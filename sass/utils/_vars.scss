@@ -1,0 +1,12 @@
+/* Основной цвет #757575 */
+/* Цвет заголовков #212121 */
+/* Белій цвет #FFFFFF */
+/* Цвет акцента #2196F3; */
+:root {
+    --primary-text-color: #757575;
+    --title-text-color: #212121;
+    --accent-color: #2196F3;
+    --next-text-color: #FFFFFF;
+    --background-color: #FFFFFF;
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}

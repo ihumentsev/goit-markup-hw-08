@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/style.css " />
+    <title>Студия</title>
+  </head>
+  <body>
+    <!-- Heder -->
+    <header class="header">
+      <div class="conteiner">
+        <a class="logo" href="./index.html">
+          Web<span class="header-logo__part">Studio</span>
+        </a>
+        <nav class="header-nav">
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./index.html">Студия</a>
+            </li>
+            <li class="header-nav__item">
+              <a
+                class="header-nav__link header-nav__link--active"
+                href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="contact header-contact">
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a class="contact-link" href="mailto:info@devstudio.com">
+                <svg class="contact-icon" width="16px" height="12px">
+                  <use href="./img/sprite.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="contact-item">
+              <a class="contact-link" href="tel:+380961111111">
+                <svg class="contact-icon" width="10px" height="16px">
+                  <use href="./img/sprite.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="mobile-menu__btn">
+          <svg class="mobile_btn__icon" width="24px" height="16px">
+            <use href="./img/sprite.svg#icon-mobile-btn"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-modal">
+        <div class="mobile-nav">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link nav__link--active" href="./index.html"
+                  >Студия</a
+                >
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <!-- контент -->
+    <main class="content">
+      <section class="project">
+        <div class="conteiner">
+          <h1 class="section-title">Проекты</h1>
+          <ul class="filters-list">
+            <li class="filters-item">
+              <button class="filters-btn" type="button">Все</button>
+            </li>
+            <li class="filters-item">
+              <button class="filters-btn" type="button">Веб-сайты</button>
+            </li>
+            <li class="filters-item">
+              <button class="filters-btn" type="button">Приложения</button>
+            </li>
+            <li class="filters-item">
+              <button class="filters-btn" type="button">Дизайн</button>
+            </li>
+            <li class="filters-item">
+              <button class="filters-btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="project-list">
+            <li class="project-item">
+              <a href="#" class="project-link">
+                <div class="project-tumb">
+                  <picture>
+                    <source
+                      srcset="
+                        .\img\compres-desk\img-270.jpg 1x,
+                        .\img\compres-desk\img-540.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-tablet\img-354.jpg 1x,
+                        .\img\compres-tablet\img-708.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-mobile\img-450.jpg 1x,
+                        .\img\compres-mobile\img-900.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./img/compres-mobile/img-min.jpg"
+                      alt="dfgdfgd"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="project-overlay">
+                    <p class="overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-title">Технокряк</h2>
+                  <p class="project-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="#" class="project-link">
+                <div class="project-tumb">
+                  <picture>
+                    <source
+                      srcset="
+                        .\img\compres-desk\img2-270.jpg 1x,
+                        .\img\compres-desk\img2-540.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-tablet\img2-354.jpg 1x,
+                        .\img\compres-tablet\img2-708.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-mobile\img2-450.jpg 1x,
+                        .\img\compres-mobile\img2-900.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./img/compres-mobile/img2-450.jpg"
+                      alt="dfgdfgd"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="project-overlay">
+                    <p class="overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="project-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="#" class="project-link">
+                <div class="project-tumb">
+                  <picture>
+                    <source
+                      srcset="
+                        .\img\compres-desk\img3-270.jpg 1x,
+                        .\img\compres-desk\img3-540.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-tablet\img3-354.jpg 1x,
+                        .\img\compres-tablet\img3-708.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-mobile\img3-450.jpg 1x,
+                        .\img\compres-mobile\img3-900.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./img/compres-mobile/img3-450.jpg"
+                      alt="dfgdfgd"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="project-overlay">
+                    <p class="overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-title">Ресторан Seafood</h2>
+                  <p class="project-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="#" class="project-link">
+                <div class="project-tumb">
+                  <picture>
+                    <source
+                      srcset="
+                        .\img\compres-desk\img4-270.jpg 1x,
+                        .\img\compres-desk\img4-540.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-tablet\img4-354.jpg 1x,
+                        .\img\compres-tablet\img4-708.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-mobile\img4-450.jpg 1x,
+                        .\img\compres-mobile\img4-900.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./img/compres-mobile/img4-450.jpg"
+                      alt="dfgdfgd"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="project-overlay">
+                    <p class="overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-title">Проект Prime</h2>
+                  <p class="project-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="#" class="project-link">
+                <div class="project-tumb">
+                  <picture>
+                    <source
+                      srcset="
+                        .\img\compres-desk\img5-270.jpg 1x,
+                        .\img\compres-desk\img5-540.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-tablet\img5-354.jpg 1x,
+                        .\img\compres-tablet\img5-708.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-mobile\img5-450.jpg 1x,
+                        .\img\compres-mobile\img5-900.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./img/compres-mobile/img5-450.jpg"
+                      alt="dfgdfgd"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="project-overlay">
+                    <p class="overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-title">Проект Boxes</h2>
+                  <p class="project-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="#" class="project-link">
+                <div class="project-tumb">
+                  <picture>
+                    <source
+                      srcset="
+                        .\img\compres-desk\img6-270.jpg 1x,
+                        .\img\compres-desk\img6-540.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-tablet\img6-354.jpg 1x,
+                        .\img\compres-tablet\img6-708.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-mobile\img6-450.jpg 1x,
+                        .\img\compres-mobile\img6-900.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./img/compres-mobile/img6-450.jpg"
+                      alt="dfgdfgd"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="project-overlay">
+                    <p class="overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-title">Inspiration has no Borders</h2>
+                  <p class="project-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="#" class="project-link">
+                <div class="project-tumb">
+                  <picture>
+                    <source
+                      srcset="
+                        .\img\compres-desk\img7-270.jpg 1x,
+                        .\img\compres-desk\img7-540.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-tablet\img7-354.jpg 1x,
+                        .\img\compres-tablet\img7-708.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-mobile\img7-450.jpg 1x,
+                        .\img\compres-mobile\img7-900.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./img/compres-mobile/img7-450.jpg"
+                      alt="dfgdfgd"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="project-overlay">
+                    <p class="overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-title">Издание Limited Edition</h2>
+                  <p class="project-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="#" class="project-link">
+                <div class="project-tumb">
+                  <picture>
+                    <source
+                      srcset="
+                        .\img\compres-desk\img8-270.jpg 1x,
+                        .\img\compres-desk\img8-540.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-tablet\img8-354.jpg 1x,
+                        .\img\compres-tablet\img8-708.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-mobile\img8-450.jpg 1x,
+                        .\img\compres-mobile\img8-900.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./img/compres-mobile/img8-450.jpg"
+                      alt="dfgdfgd"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="project-overlay">
+                    <p class="overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-title">Проект LAB</h2>
+                  <p class="project-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="project-item">
+              <a href="#" class="project-link">
+                <div class="project-tumb">
+                  <picture>
+                    <source
+                      srcset="
+                        .\img\compres-desk\img9-270.jpg 1x,
+                        .\img\compres-desk\img9-540.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-tablet\img9-354.jpg 1x,
+                        .\img\compres-tablet\img9-708.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        .\img\compres-mobile\img9-450.jpg 1x,
+                        .\img\compres-mobile\img9-900.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      class="project-img"
+                      src="./img/compres-mobile/img9-450.jpg"
+                      alt="dfgdfgd"
+                      width="450"
+                    />
+                  </picture>
+                  <div class="project-overlay">
+                    <p class="overlay-text">
+                      Ресурс предлагает комплексные предложения с разным уровнем
+                      функционала и сервисов. Все это позволит посетителю
+                      получить исчерпывающие сведения о компании или частном
+                      лице.
+                    </p>
+                  </div>
+                </div>
+                <div class="project-description">
+                  <h2 class="project-title">Growing Business</h2>
+                  <p class="project-text">Приложение</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer>
+      <div class="conteiner">
+        <div class="contact-footer">
+          <a class="logo footer-logo" href="./index.html"
+            >Web<span class="footer-logo__part">Studio</span></a
+          >
+          <address>
+            <ul>
+              <li class="adress-item">
+                <a
+                  class="address-link--map"
+                  href="https://goo.gl/maps/bw3gN93y1NZQzxdL8"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >г. Киев, пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="adress-item">
+                <a class="address-link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+              <li class="adress-item">
+                <a class="address-link" href="tel:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="social-footer">
+          <h2 class="social-footer__title">присоединяйтесь</h2>
+          <ul class="social-footer__list">
+            <li class="social-footer__item">
+              <a class="social-footer__link" href="#">
+                <svg class="social-footer__icon" width="44" height="44">
+                  <use href="./img/sprite.svg#icon-insta_2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-footer__item">
+              <a class="social-footer__link" href="#">
+                <svg class="social-footer__icon" width="44" height="44">
+                  <use href="./img/sprite.svg#icon-twitter_2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-footer__item">
+              <a class="social-footer__link" href="#">
+                <svg class="social-footer__icon" width="44" height="44">
+                  <use href="./img/sprite.svg#icon-Ellipsef"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-footer__item">
+              <a class="social-footer__link" href="#">
+                <svg class="social-footer__icon" width="44" height="44">
+                  <use href="./img/sprite.svg#icon-linkedin_2"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer-form__conteiner">
+          <p class="footer-form__title">Подпишитесь на рассылку</p>
+          <form class="footer-form" action="" name="callback" autocomplete="on">
+            <input
+              class="footer-input"
+              type="email"
+              placeholder="E-mail"
+              name="name"
+              id="foot-mailing"
+            />
+            <button class="button-btn footer-btn" type="submit">
+              Подписаться
+              <svg class="footer-btn__icon" width="24px" height="24px">
+                <use href="./img/sprite.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

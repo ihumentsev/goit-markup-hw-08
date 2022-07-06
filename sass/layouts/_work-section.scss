@@ -1,0 +1,52 @@
+.work {
+    @media screen and (max-width:1200px) {
+            display: none;
+        }
+    padding-bottom: 94px;
+}
+
+.work-title {
+    margin-bottom: 0;
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.work-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 30px;
+}
+
+.work-item {
+    position: relative;
+    display: block;
+    line-height: 0;
+
+}
+
+
+.work-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 370px;
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+
+
+}
+
+.work-overlay__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
