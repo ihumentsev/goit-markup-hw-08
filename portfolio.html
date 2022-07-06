@@ -31,14 +31,14 @@
         <nav class="header-nav">
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <a class="header-nav__link" href="./index.html">Студия</a>
-            </li>
-            <li class="header-nav__item">
               <a
                 class="header-nav__link header-nav__link--active"
-                href="./portfolio.html"
-                >Портфолио</a
+                href="./index.html"
+                >Студия</a
               >
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="header-nav__item">
               <a class="header-nav__link" href="#">Контакты</a>
@@ -65,30 +65,62 @@
             </li>
           </ul>
         </div>
-        <button type="button" class="mobile-menu__btn">
+        <button
+          type="button"
+          class="mobile-menu__btn"
+          data-menu-button
+          aria-expanded="false"
+        >
           <svg class="mobile_btn__icon" width="24px" height="16px">
-            <use href="./img/sprite.svg#icon-mobile-btn"></use>
+            <use class="open-btn" href="./img/sprite.svg#icon-mobile-btn"></use>
+            <use class="close-btn" href="./img/sprite.svg#icon-close"></use>
           </svg>
         </button>
       </div>
-      <div class="mobile-modal">
+      <div class="mobile-modal" data-menu>
         <div class="mobile-nav">
           <nav class="nav">
             <ul class="nav__list">
               <li class="nav__item">
-                <a class="nav__link nav__link--active" href="./index.html"
-                  >Студия</a
-                >
+                <a class="nav__link" href="./index.html">Студия</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="./portfolio.html">Портфолио</a>
+                <a class="nav__link nav__link--active" href="./portfolio.html"
+                  >Портфолио</a
+                >
               </li>
               <li class="nav__item">
                 <a class="nav__link" href="#">Контакты</a>
               </li>
             </ul>
           </nav>
+          <ul class="menu-contact__list">
+            <li class="menu-contact__item">
+              <a class="menu-mail__link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="menu-contact__item">
+              <a class="menu-tel__link" href="tel:+380961111111">
+                +38 096 111 11 11
+              </a>
+            </li>
+          </ul>
         </div>
+        <ul class="social-menu__list">
+          <li class="social-menu__item">
+            <a href="#" class="social-menu__link">Instagram</a>
+          </li>
+          <li class="social-menu__item">
+            <a href="#" class="social-menu__link">Twitter</a>
+          </li>
+          <li class="social-menu__item">
+            <a href="#" class="social-menu__link">Facebook</a>
+          </li>
+          <li class="social-menu__item">
+            <a href="#" class="social-menu__link">LinkedIn</a>
+          </li>
+        </ul>
       </div>
     </header>
     <!-- контент -->
@@ -120,22 +152,22 @@
                   <picture>
                     <source
                       srcset="
-                        .\img\compres-desk\img-270.jpg 1x,
-                        .\img\compres-desk\img-540.jpg 2x
+                        ./img/compres-desk/img-270.jpg 1x,
+                        ./img/compres-desk/img-540.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-tablet\img-354.jpg 1x,
-                        .\img\compres-tablet\img-708.jpg 2x
+                        ./img/compres-tablet/img-354.jpg 1x,
+                        ./img/compres-tablet/img-708.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-mobile\img-450.jpg 1x,
-                        .\img\compres-mobile\img-900.jpg 2x
+                        ./img/compres-mobile/img-450.jpg 1x,
+                        ./img/compres-mobile/img-900.jpg 2x
                       "
                       media="(max-width:767px)"
                     />
@@ -167,22 +199,22 @@
                   <picture>
                     <source
                       srcset="
-                        .\img\compres-desk\img2-270.jpg 1x,
-                        .\img\compres-desk\img2-540.jpg 2x
+                        ./img/compres-desk/img2-270.jpg 1x,
+                        ./img/compres-desk/img2-540.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-tablet\img2-354.jpg 1x,
-                        .\img\compres-tablet\img2-708.jpg 2x
+                        ./img/compres-tablet/img2-354.jpg 1x,
+                        ./img/compres-tablet/img2-708.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-mobile\img2-450.jpg 1x,
-                        .\img\compres-mobile\img2-900.jpg 2x
+                        ./img/compres-mobile/img2-450.jpg 1x,
+                        ./img/compres-mobile/img2-900.jpg 2x
                       "
                       media="(max-width:767px)"
                     />
@@ -216,22 +248,22 @@
                   <picture>
                     <source
                       srcset="
-                        .\img\compres-desk\img3-270.jpg 1x,
-                        .\img\compres-desk\img3-540.jpg 2x
+                        ./img/compres-desk/img3-270.jpg 1x,
+                        ./img/compres-desk/img3-540.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-tablet\img3-354.jpg 1x,
-                        .\img\compres-tablet\img3-708.jpg 2x
+                        ./img/compres-tablet/img3-354.jpg 1x,
+                        ./img/compres-tablet/img3-708.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-mobile\img3-450.jpg 1x,
-                        .\img\compres-mobile\img3-900.jpg 2x
+                        ./img/compres-mobile/img3-450.jpg 1x,
+                        ./img/compres-mobile/img3-900.jpg 2x
                       "
                       media="(max-width:767px)"
                     />
@@ -263,22 +295,22 @@
                   <picture>
                     <source
                       srcset="
-                        .\img\compres-desk\img4-270.jpg 1x,
-                        .\img\compres-desk\img4-540.jpg 2x
+                        ./img/compres-desk/img4-270.jpg 1x,
+                        ./img/compres-desk/img4-540.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-tablet\img4-354.jpg 1x,
-                        .\img\compres-tablet\img4-708.jpg 2x
+                        ./img/compres-tablet/img4-354.jpg 1x,
+                        ./img/compres-tablet/img4-708.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-mobile\img4-450.jpg 1x,
-                        .\img\compres-mobile\img4-900.jpg 2x
+                        ./img/compres-mobile/img4-450.jpg 1x,
+                        ./img/compres-mobile/img4-900.jpg 2x
                       "
                       media="(max-width:767px)"
                     />
@@ -310,22 +342,22 @@
                   <picture>
                     <source
                       srcset="
-                        .\img\compres-desk\img5-270.jpg 1x,
-                        .\img\compres-desk\img5-540.jpg 2x
+                        ./img/compres-desk/img5-270.jpg 1x,
+                        ./img/compres-desk/img5-540.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-tablet\img5-354.jpg 1x,
-                        .\img\compres-tablet\img5-708.jpg 2x
+                        ./img/compres-tablet/img5-354.jpg 1x,
+                        ./img/compres-tablet/img5-708.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-mobile\img5-450.jpg 1x,
-                        .\img\compres-mobile\img5-900.jpg 2x
+                        ./img/compres-mobile/img5-450.jpg 1x,
+                        ./img/compres-mobile/img5-900.jpg 2x
                       "
                       media="(max-width:767px)"
                     />
@@ -357,22 +389,22 @@
                   <picture>
                     <source
                       srcset="
-                        .\img\compres-desk\img6-270.jpg 1x,
-                        .\img\compres-desk\img6-540.jpg 2x
+                        ./img/compres-desk/img6-270.jpg 1x,
+                        ./img/compres-desk/img6-540.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-tablet\img6-354.jpg 1x,
-                        .\img\compres-tablet\img6-708.jpg 2x
+                        ./img/compres-tablet/img6-354.jpg 1x,
+                        ./img/compres-tablet/img6-708.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-mobile\img6-450.jpg 1x,
-                        .\img\compres-mobile\img6-900.jpg 2x
+                        ./img/compres-mobile/img6-450.jpg 1x,
+                        ./img/compres-mobile/img6-900.jpg 2x
                       "
                       media="(max-width:767px)"
                     />
@@ -404,22 +436,22 @@
                   <picture>
                     <source
                       srcset="
-                        .\img\compres-desk\img7-270.jpg 1x,
-                        .\img\compres-desk\img7-540.jpg 2x
+                        ./img/compres-desk/img7-270.jpg 1x,
+                        ./img/compres-desk/img7-540.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-tablet\img7-354.jpg 1x,
-                        .\img\compres-tablet\img7-708.jpg 2x
+                        ./img/compres-tablet/img7-354.jpg 1x,
+                        ./img/compres-tablet/img7-708.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-mobile\img7-450.jpg 1x,
-                        .\img\compres-mobile\img7-900.jpg 2x
+                        ./img/compres-mobile/img7-450.jpg 1x,
+                        ./img/compres-mobile/img7-900.jpg 2x
                       "
                       media="(max-width:767px)"
                     />
@@ -451,22 +483,22 @@
                   <picture>
                     <source
                       srcset="
-                        .\img\compres-desk\img8-270.jpg 1x,
-                        .\img\compres-desk\img8-540.jpg 2x
+                        ./img/compres-desk/img8-270.jpg 1x,
+                        ./img/compres-desk/img8-540.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-tablet\img8-354.jpg 1x,
-                        .\img\compres-tablet\img8-708.jpg 2x
+                        ./img/compres-tablet/img8-354.jpg 1x,
+                        ./img/compres-tablet/img8-708.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-mobile\img8-450.jpg 1x,
-                        .\img\compres-mobile\img8-900.jpg 2x
+                        ./img/compres-mobile/img8-450.jpg 1x,
+                        ./img/compres-mobile/img8-900.jpg 2x
                       "
                       media="(max-width:767px)"
                     />
@@ -498,22 +530,22 @@
                   <picture>
                     <source
                       srcset="
-                        .\img\compres-desk\img9-270.jpg 1x,
-                        .\img\compres-desk\img9-540.jpg 2x
+                        ./img/compres-desk/img9-270.jpg 1x,
+                        ./img/compres-desk/img9-540.jpg 2x
                       "
                       media="(min-width:1200px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-tablet\img9-354.jpg 1x,
-                        .\img\compres-tablet\img9-708.jpg 2x
+                        ./img/compres-tablet/img9-354.jpg 1x,
+                        ./img/compres-tablet/img9-708.jpg 2x
                       "
                       media="(min-width:768px)"
                     />
                     <source
                       srcset="
-                        .\img\compres-mobile\img9-450.jpg 1x,
-                        .\img\compres-mobile\img9-900.jpg 2x
+                        ./img/compres-mobile/img9-450.jpg 1x,
+                        ./img/compres-mobile/img9-900.jpg 2x
                       "
                       media="(max-width:767px)"
                     />
@@ -610,7 +642,12 @@
         </div>
         <div class="footer-form__conteiner">
           <p class="footer-form__title">Подпишитесь на рассылку</p>
-          <form class="footer-form" action="" name="callback" autocomplete="on">
+          <form
+            class="footer-form"
+            action="#"
+            name="callback"
+            autocomplete="on"
+          >
             <input
               class="footer-input"
               type="email"
